@@ -1,0 +1,656 @@
+{
+	"_OFProjectGeneratorVersion": "0.103.0",
+	"archiveVersion": "1",
+	"classes": {},
+	"objectVersion": "54",
+	"objects": {
+		"0A2B39A4-D262-4D69-9ED4-4015353CC65B": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_lite_custom_op.h",
+			"sourceTree": "<group>"
+		},
+		"0B19F163-1CD7-4D8F-8727-2DFCE13334FD": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "cpu_provider_factory.h",
+			"sourceTree": "<group>"
+		},
+		"0C8C5954-6B29-4812-8302-227D336E0183": {
+			"children": [
+				"874B5755-68A4-48DB-B4A9-7BAA3829966F"
+			],
+			"isa": "PBXGroup",
+			"name": "core",
+			"path": "core",
+			"sourceTree": "<group>"
+		},
+		"1688F1AD-C11E-4F10-9202-5BD2E5B52C14": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_float16.h",
+			"sourceTree": "<group>"
+		},
+		"18F5462C-3393-4AB5-A498-EF34BDBE8C98": {
+			"fileRef": "EE4D296D-191E-40C8-8AE4-C0BF5ED7770F",
+			"isa": "PBXBuildFile",
+			"settings": {
+				"ATTRIBUTES": [
+					"CodeSignOnCopy"
+				]
+			}
+		},
+		"191CD6FA2847E21E0085CBB6": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.entitlements",
+			"path": "of.entitlements",
+			"sourceTree": "<group>"
+		},
+		"191EF70929D778A400F35F26": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "openFrameworks",
+			"path": "../../libs/openFrameworks",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"19912EA1-2EF1-490B-B81A-67B38111C2BF": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "coreml_provider_factory.h",
+			"sourceTree": "<group>"
+		},
+		"19B789C429E5AB4A0082E9B8": {
+			"alwaysOutOfDate": "1",
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputFileListPaths": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"outputFileListPaths": [],
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "\"$OF_PATH/scripts/osx/xcode_project.sh\"\n",
+			"showEnvVarsInLog": "0"
+		},
+		"1A7D0882-5357-444F-8D7E-B3F5144EA0AF": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_cxx_api.h",
+			"sourceTree": "<group>"
+		},
+		"1D621F96-73E9-414E-8B18-079CCDA70A13": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_ep_c_api.h",
+			"sourceTree": "<group>"
+		},
+		"3D9693D8-47CE-421F-98BB-D34E095B1B37": {
+			"children": [
+				"C7AEDC59-1B88-404B-88FE-0656B2735EEE",
+				"EE4D296D-191E-40C8-8AE4-C0BF5ED7770F",
+				"EBF3BC6B-72ED-422F-B586-7427DE3B3F32"
+			],
+			"isa": "PBXGroup",
+			"name": "osx",
+			"path": "osx",
+			"sourceTree": "<group>"
+		},
+		"45E08B43-D86A-4932-ABEC-DB3256C44C6E": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "ofxOnnxRuntime.h",
+			"sourceTree": "<group>"
+		},
+		"48469D0E-8F2E-40E8-96B0-97B8790AE300": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_cxx_inline.h",
+			"sourceTree": "<group>"
+		},
+		"583E05CF-6ECD-4225-B89E-C2794284777C": {
+			"fileRef": "EBF3BC6B-72ED-422F-B586-7427DE3B3F32",
+			"isa": "PBXBuildFile",
+			"settings": {
+				"ATTRIBUTES": [
+					"CodeSignOnCopy"
+				]
+			}
+		},
+		"66DE699F-8F57-4638-AA3C-126845CA5D9A": {
+			"children": [
+				"0C8C5954-6B29-4812-8302-227D336E0183",
+				"19912EA1-2EF1-490B-B81A-67B38111C2BF",
+				"0B19F163-1CD7-4D8F-8727-2DFCE13334FD",
+				"DF2CA238-1809-4999-A34B-54D8E576F4F0",
+				"1A7D0882-5357-444F-8D7E-B3F5144EA0AF",
+				"48469D0E-8F2E-40E8-96B0-97B8790AE300",
+				"9CBDC705-F313-47A6-8BED-75EBEE55D8DD",
+				"1D621F96-73E9-414E-8B18-079CCDA70A13",
+				"840FCD6E-E4A1-4D3F-9912-7D47AF92A6BA",
+				"8AA471BE-102E-463D-AE1B-FA3946F3D87C",
+				"C18AB836-26C4-46B5-9383-C5E58D0F46CE",
+				"B811EC54-56F5-4756-AC35-189055BBB1CB",
+				"1688F1AD-C11E-4F10-9202-5BD2E5B52C14",
+				"0A2B39A4-D262-4D69-9ED4-4015353CC65B",
+				"D2573320-659C-4CEE-A7A4-6D7BBA1C196D",
+				"F09AE9E5-232A-4048-9E16-BFF84970CE1F",
+				"B2C7D5D5-6D86-46A1-833A-28AD5EBA1C44",
+				"9ACF47D3-1E1E-419A-9897-9C059A3778FA"
+			],
+			"isa": "PBXGroup",
+			"name": "include",
+			"path": "include",
+			"sourceTree": "<group>"
+		},
+		"68594C71-AADF-47E2-B23F-90DFEB45A895": {
+			"children": [
+				"3D9693D8-47CE-421F-98BB-D34E095B1B37"
+			],
+			"isa": "PBXGroup",
+			"name": "lib",
+			"path": "lib",
+			"sourceTree": "<group>"
+		},
+		"6BF2D3EA-D1E6-4711-866B-3513FCBC252A": {
+			"fileRef": "C7AEDC59-1B88-404B-88FE-0656B2735EEE",
+			"isa": "PBXBuildFile",
+			"settings": {
+				"ATTRIBUTES": [
+					"CodeSignOnCopy"
+				]
+			}
+		},
+		"840FCD6E-E4A1-4D3F-9912-7D47AF92A6BA": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_ep_device_ep_metadata_keys.h",
+			"sourceTree": "<group>"
+		},
+		"85B9C26D-15FC-48F3-90FA-235909AD1A14": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder",
+			"name": "data",
+			"path": "bin/data",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"874B5755-68A4-48DB-B4A9-7BAA3829966F": {
+			"children": [
+				"E62C7BC4-A09D-4F57-B754-B81CE057B5A2",
+				"AE3804EC-8756-4B0A-8241-B0E66C859086"
+			],
+			"isa": "PBXGroup",
+			"name": "providers",
+			"path": "providers",
+			"sourceTree": "<group>"
+		},
+		"8AA471BE-102E-463D-AE1B-FA3946F3D87C": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_error_code.h",
+			"sourceTree": "<group>"
+		},
+		"90694E60-9B5D-4510-9CF2-BEFDF66A014B": {
+			"children": [
+				"F2CE6F8A-6E84-44A6-8AF7-26A13E78701E",
+				"DB2C397A-0168-4D7E-9BBB-E899FDFC4CBE"
+			],
+			"isa": "PBXGroup",
+			"name": "ofxOnnxRuntime",
+			"path": "ofxOnnxRuntime",
+			"sourceTree": "<group>"
+		},
+		"9708BA20-6BD1-419C-A28F-DC4578ACAAF1": {
+			"fileRef": "F8E9E44A-954D-4C2B-AB0D-2E603504C746",
+			"isa": "PBXBuildFile"
+		},
+		"9ACF47D3-1E1E-419A-9897-9C059A3778FA": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "webgpu_provider_factory.h",
+			"sourceTree": "<group>"
+		},
+		"9CBDC705-F313-47A6-8BED-75EBEE55D8DD": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_env_config_keys.h",
+			"sourceTree": "<group>"
+		},
+		"AE3804EC-8756-4B0A-8241-B0E66C859086": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "resource.h",
+			"sourceTree": "<group>"
+		},
+		"B2C7D5D5-6D86-46A1-833A-28AD5EBA1C44": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "provider_options.h",
+			"sourceTree": "<group>"
+		},
+		"B5C3C577-DC1A-4AEC-931C-1685FC4E46B7": {
+			"children": [
+				"68594C71-AADF-47E2-B23F-90DFEB45A895",
+				"66DE699F-8F57-4638-AA3C-126845CA5D9A"
+			],
+			"isa": "PBXGroup",
+			"name": "onnxruntime",
+			"path": "onnxruntime",
+			"sourceTree": "<group>"
+		},
+		"B811EC54-56F5-4756-AC35-189055BBB1CB": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_experimental_cxx_api.h",
+			"sourceTree": "<group>"
+		},
+		"BB4B014C10F69532006C3DED": {
+			"children": [
+				"90694E60-9B5D-4510-9CF2-BEFDF66A014B"
+			],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"path": "../../addons",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"C18AB836-26C4-46B5-9383-C5E58D0F46CE": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_experimental_c_api.h",
+			"sourceTree": "<group>"
+		},
+		"C1AB1AE0-2228-47C5-805A-CFB70202A52D": {
+			"fileRef": "E1A10C07-9F8D-458D-B3FD-EB46048AD07A",
+			"isa": "PBXBuildFile"
+		},
+		"C7AEDC59-1B88-404B-88FE-0656B2735EEE": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "compiled.mach-o.dylib",
+			"name": "libonnxruntime.1.28.2.dylib",
+			"sourceTree": "<group>"
+		},
+		"D2573320-659C-4CEE-A7A4-6D7BBA1C196D": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_run_options_config_keys.h",
+			"sourceTree": "<group>"
+		},
+		"DB2C397A-0168-4D7E-9BBB-E899FDFC4CBE": {
+			"children": [
+				"E1A10C07-9F8D-458D-B3FD-EB46048AD07A",
+				"45E08B43-D86A-4932-ABEC-DB3256C44C6E"
+			],
+			"isa": "PBXGroup",
+			"name": "src",
+			"path": "src",
+			"sourceTree": "<group>"
+		},
+		"DF2CA238-1809-4999-A34B-54D8E576F4F0": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_c_api.h",
+			"sourceTree": "<group>"
+		},
+		"E1A10C07-9F8D-458D-B3FD-EB46048AD07A": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "ofxOnnxRuntime.cpp",
+			"sourceTree": "<group>"
+		},
+		"E42962A92163ECCD00A6A9E2": {
+			"alwaysOutOfDate": "1",
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"name": "Run Script — Compile OF",
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "$OF_CORE_BUILD_COMMAND\n",
+			"showEnvVarsInLog": "0"
+		},
+		"E4A5B60F29BAAAE400C2D356": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "6",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B4A0A3A1720003C02F2": {
+			"children": [
+				"191CD6FA2847E21E0085CBB6",
+				"E4B6FCAD0C3E899E008CF71C",
+				"E4EB6923138AFD0F00A09F29",
+				"E4B69E1C0A3A1BDC003C02F2",
+				"191EF70929D778A400F35F26",
+				"BB4B014C10F69532006C3DED",
+				"E4B69B5B0A3A1756003C02F2",
+				"85B9C26D-15FC-48F3-90FA-235909AD1A14"
+			],
+			"isa": "PBXGroup",
+			"sourceTree": "<group>"
+		},
+		"E4B69B4C0A3A1720003C02F2": {
+			"attributes": {
+				"BuildIndependentTargetsInParallel": "YES",
+				"LastUpgradeCheck": "1540"
+			},
+			"buildConfigurationList": "E4B69B4D0A3A1720003C02F2",
+			"compatibilityVersion": "Xcode 3.2",
+			"developmentRegion": "en",
+			"hasScannedForEncodings": "0",
+			"isa": "PBXProject",
+			"knownRegions": [
+				"en",
+				"Base"
+			],
+			"mainGroup": "E4B69B4A0A3A1720003C02F2",
+			"productRefGroup": "E4B69B4A0A3A1720003C02F2",
+			"projectDirPath": "",
+			"projectRoot": "",
+			"targets": [
+				"E4B69B5A0A3A1756003C02F2"
+			]
+		},
+		"E4B69B4D0A3A1720003C02F2": {
+			"buildConfigurations": [
+				"E4B69B4E0A3A1720003C02F2",
+				"E4B69B4F0A3A1720003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B4E0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "NO",
+				"ENABLE_TESTABILITY": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "0",
+				"GCC_WARN_UNUSED_VARIABLE": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B4F0A3A1720003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"CODE_SIGN_ENTITLEMENTS": "of.entitlements",
+				"COPY_PHASE_STRIP": "YES",
+				"GCC_OPTIMIZATION_LEVEL": "3",
+				"GCC_UNROLL_LOOPS": "YES",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src"
+				],
+				"OTHER_CPLUSPLUSFLAGS": "-D__MACOSX_CORE__"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69B580A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"E4B69E200A3A1BDC003C02F2",
+				"E4B69E210A3A1BDC003C02F2",
+				"9708BA20-6BD1-419C-A28F-DC4578ACAAF1",
+				"6BF2D3EA-D1E6-4711-866B-3513FCBC252A",
+				"18F5462C-3393-4AB5-A498-EF34BDBE8C98",
+				"583E05CF-6ECD-4225-B89E-C2794284777C",
+				"C1AB1AE0-2228-47C5-805A-CFB70202A52D"
+			],
+			"isa": "PBXSourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B590A3A1756003C02F2": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"isa": "PBXFrameworksBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4B69B5A0A3A1756003C02F2": {
+			"buildConfigurationList": "E4B69B5F0A3A1757003C02F2",
+			"buildPhases": [
+				"E42962A92163ECCD00A6A9E2",
+				"E4B69B580A3A1756003C02F2",
+				"E4B69B590A3A1756003C02F2",
+				"E4C2427710CC5ABF004149E2",
+				"E4A5B60F29BAAAE400C2D356",
+				"19B789C429E5AB4A0082E9B8"
+			],
+			"buildRules": [],
+			"dependencies": [],
+			"isa": "PBXNativeTarget",
+			"name": "ofxOnnxRuntime",
+			"productName": "myOFApp",
+			"productReference": "E4B69B5B0A3A1756003C02F2",
+			"productType": "com.apple.product-type.application"
+		},
+		"E4B69B5B0A3A1756003C02F2": {
+			"explicitFileType": "wrapper.application",
+			"includeInIndex": "0",
+			"isa": "PBXFileReference",
+			"path": "ofxOnnxRuntimeDebug.app",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"E4B69B5F0A3A1757003C02F2": {
+			"buildConfigurations": [
+				"E4B69B600A3A1757003C02F2",
+				"E4B69B610A3A1757003C02F2"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"E4B69B600A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "NO",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"GCC_DYNAMIC_NO_PIC": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"libs/onnxruntime/include",
+					"src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_DEBUG)",
+					"libs/onnxruntime/lib/osx/libonnxruntime.1.28.2.dylib",
+					"libs/onnxruntime/lib/osx/libonnxruntime.dylib",
+					"libs/onnxruntime/lib/osx/libonnxruntime.1.28.2.dylib",
+					"-Xlinker",
+					"-rpath",
+					"-Xlinker",
+					"@executable_path"
+				]
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"E4B69B610A3A1757003C02F2": {
+			"baseConfigurationReference": "E4EB6923138AFD0F00A09F29",
+			"buildSettings": {
+				"ARCHS": "$(ARCHS_STANDARD)",
+				"COPY_PHASE_STRIP": "YES",
+				"FRAMEWORK_SEARCH_PATHS": "$(inherited)",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src",
+					"libs/onnxruntime/include",
+					"src"
+				],
+				"LIBRARY_SEARCH_PATHS": "$(inherited)",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)",
+					"$(LIB_OF_RELEASE)",
+					"libs/onnxruntime/lib/osx/libonnxruntime.1.28.2.dylib",
+					"libs/onnxruntime/lib/osx/libonnxruntime.dylib",
+					"libs/onnxruntime/lib/osx/libonnxruntime.1.28.2.dylib",
+					"-Xlinker",
+					"-rpath",
+					"-Xlinker",
+					"@executable_path"
+				],
+				"baseConfigurationReference": "E4EB6923138AFD0F00A09F29"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"E4B69E1C0A3A1BDC003C02F2": {
+			"children": [
+				"E4B69E1D0A3A1BDC003C02F2",
+				"E4B69E1E0A3A1BDC003C02F2",
+				"E4B69E1F0A3A1BDC003C02F2",
+				"F8E9E44A-954D-4C2B-AB0D-2E603504C746",
+				"EF3CC29C-EE60-4E1D-9692-DEC01ACD3137"
+			],
+			"isa": "PBXGroup",
+			"path": "src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1D0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "main.cpp",
+			"path": "src/main.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1E0A3A1BDC003C02F2": {
+			"explicitFileType": "sourcecode.cpp.cpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ofApp.cpp",
+			"path": "src/ofApp.cpp",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E1F0A3A1BDC003C02F2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"name": "ofApp.h",
+			"path": "src/ofApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4B69E200A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1D0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B69E210A3A1BDC003C02F2": {
+			"fileRef": "E4B69E1E0A3A1BDC003C02F2",
+			"isa": "PBXBuildFile"
+		},
+		"E4B6FCAD0C3E899E008CF71C": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.xml",
+			"path": "openFrameworks-Info.plist",
+			"sourceTree": "<group>"
+		},
+		"E4C2427710CC5ABF004149E2": {
+			"buildActionMask": "2147483647",
+			"dstPath": "",
+			"dstSubfolderSpec": "10",
+			"files": [],
+			"isa": "PBXCopyFilesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"E4EB6923138AFD0F00A09F29": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"path": "Project.xcconfig",
+			"sourceTree": "<group>"
+		},
+		"E62C7BC4-A09D-4F57-B754-B81CE057B5A2": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "custom_op_context.h",
+			"sourceTree": "<group>"
+		},
+		"EBF3BC6B-72ED-422F-B586-7427DE3B3F32": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "compiled.mach-o.dylib",
+			"name": "libonnxruntime.1.dylib",
+			"sourceTree": "<group>"
+		},
+		"EE4D296D-191E-40C8-8AE4-C0BF5ED7770F": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "compiled.mach-o.dylib",
+			"name": "libonnxruntime.dylib",
+			"sourceTree": "<group>"
+		},
+		"EF3CC29C-EE60-4E1D-9692-DEC01ACD3137": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "ofxOnnxRuntime.h",
+			"sourceTree": "<group>"
+		},
+		"F09AE9E5-232A-4048-9E16-BFF84970CE1F": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.h",
+			"name": "onnxruntime_session_options_config_keys.h",
+			"sourceTree": "<group>"
+		},
+		"F2CE6F8A-6E84-44A6-8AF7-26A13E78701E": {
+			"children": [
+				"B5C3C577-DC1A-4AEC-931C-1685FC4E46B7"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"path": "libs",
+			"sourceTree": "<group>"
+		},
+		"F8E9E44A-954D-4C2B-AB0D-2E603504C746": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.cpp",
+			"name": "ofxOnnxRuntime.cpp",
+			"sourceTree": "<group>"
+		}
+	},
+	"rootObject": "E4B69B4C0A3A1720003C02F2"
+}

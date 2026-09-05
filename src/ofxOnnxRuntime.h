@@ -1,0 +1,57 @@
+#pragma once
+
+#include <onnxruntime_cxx_api.h>
+
+namespace ofxOnnxRuntime
+{
+	enum InferType
+	{
+		INFER_CPU = 0,
+		INFER_CUDA,
+		INFER_TENSORRT
+	};
+
+	struct BaseSetting
+	{
+		InferType infer_type;
+		int device_id;
+	};
+
+	class BaseHandler
+	{
+	public:
+		BaseHandler() {}
+
+		void setup(const std::string& onnx_path, const BaseSetting& base_setting = BaseSetting{ INFER_CPU, 0 });
+		void setup2(const std::string& onnx_path, const Ort::SessionOptions& session_options);
+
+		Ort::Value& run();
+
+		float* getInputTensorData() {
+			return this->input_values_handler.data();
+		}
+
+		const std::vector<int64_t>& getInputDims() const {
+			return input_node_dims;
+		}
+
+	protected:
+		Ort::Env ort_env;
+		std::shared_ptr<Ort::Session> ort_session;
+		// onnxruntime >= 1.12 hands back allocator-owned strings instead of raw
+		// char*, so the names are copied out here and the char* vectors below
+		// just point into these owned strings.
+		std::vector<std::string> input_node_names_storage;
+		std::vector<std::string> output_node_names_storage;
+		std::vector<const char *> input_node_names;
+		std::vector<int64_t> input_node_dims; // 1 input only.
+		std::size_t input_tensor_size = 1;
+		std::vector<float> input_values_handler;
+		Ort::MemoryInfo memory_info_handler = Ort::MemoryInfo::CreateCpu(OrtArenaAllocator, OrtMemTypeDefault);
+		std::vector<const char *> output_node_names;
+		std::vector<std::vector<int64_t>> output_node_dims; // >=1 outputs
+		std::vector<Ort::Value> output_values;
+		Ort::Value dummy_tensor{ nullptr };
+		int num_outputs = 1;
+	};
+}

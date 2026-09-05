@@ -1,4 +1,9 @@
 # ofxOnnxRuntime
+
+Update: 5 September 2026 / Lots of changes incoming to get this to work properly, will document later but currently getting it to work on an M1 Mac with the help of Claude.
+
+TODO: Add the actual links and paths but TLDR; get the latest build from the ONNX MSFT Repo, add the libs/includes etc. Only testing on Mac with the osx-arm64 dylibs.
+
 [ONNX Runtime](https://github.com/microsoft/onnxruntime) tiny wrapper for openFrameworks
 
 !['test'](screenshot.png)
